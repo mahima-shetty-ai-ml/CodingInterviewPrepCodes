@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-void first_digit(int n){
+int first_digit(int n){
     
     while(n>10){
         n=n/10;
     }
-    cout<<n<<endl;
+    return n;    
 }
 
 int main() {
 	
 	int n;
 	cin >> n;
-	first_digit(n);
+	cout<<first_digit(n);
 	return 0;
 }
